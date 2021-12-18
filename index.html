@@ -12,24 +12,32 @@
 
 <body>
     <div class="main">
-        <h1 class="heading">Temparature Converter</h1>
+        <div class="headinDiv">
+            <h1 class="heading">Temparature Converter</h1>
+        </div>
         <div class="addDiv">
-            <label class="paylabel" for="addTemp">Add any scale Temparature here :</label>
-            <input type="number" id="addTemp" placeholder="Add Temp Here">
-            <label class="paylabel" for="cardtype">How Do You Like To Convert Your Added Temparature into outer
-                Scale :</label>
-            <select name="select" id="cardtype">
-                <option value="selectcard">----select option----</option>
-                <option value="F-C">Fahrenheit -Celsius</option>
-                <option value="C-F">Celsius-Fahrenheit </option>
-                <option value="K-C">Kelvin - Celsius</option>
-                <option value="C-K">Celsius - Kelvin</option>
-                <option value="F-K">Fahrenheit - Kelvin</option>
-                <option value="K-F">Kelvin - Fahrenheit</option>
-            </select>
-            <br>
-            <p id="output">Result Goes Here</p>
-            <button onclick="validate()">Convert</button>
+            <div>
+                <label class="paylabel" for="addTemp">Add Temparature</label>
+                <input type="number" id="addTemp" placeholder="Add Temp Here">
+            </div>
+            <div>
+                <label class="paylabel" for="cardtype">
+                    Select scales
+                </label>
+                <select name="select" id="cardtype">
+                    <option value="selectcard">----select option----</option>
+                    <option value="F-C">Fahrenheit -Celsius</option>
+                    <option value="C-F">Celsius-Fahrenheit </option>
+                    <option value="K-C">Kelvin - Celsius</option>
+                    <option value="C-K">Celsius - Kelvin</option>
+                    <option value="F-K">Fahrenheit - Kelvin</option>
+                    <option value="K-F">Kelvin - Fahrenheit</option>
+                </select>
+            </div>
+            <div>
+                <p id="output">Result Goes Here</p>
+                <button id="convertBtn">Convert</button>
+            </div>
         </div>
     </div>
 </body>
